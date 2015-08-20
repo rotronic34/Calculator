@@ -22,8 +22,11 @@ class ViewController: UIViewController {
             display.text = digit
             userIsInTheMiddleOfTypingANumber = true
         }
-        
     }
+    
+    @IBAction func Enter() {
+    }
+
 }
 
  
