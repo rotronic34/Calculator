@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController
+{
     @IBOutlet weak var display: UILabel!
     
     var userIsInTheMiddleOfTypingANumber: Bool = false
@@ -24,9 +24,11 @@ class ViewController: UIViewController {
         }
     }
     
+    var operandStack = Array<Double>()
     @IBAction func Enter() {
+        userIsInTheMiddleOfTypingANumber = false
+        operandStack.append(newElement: T)
     }
-
 }
 
  
